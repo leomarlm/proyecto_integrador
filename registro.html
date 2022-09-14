@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./Assets/logo1.png" />
+    <link rel="stylesheet" href="./Css/styles-registro.css" />
+    <title>Elyseg - Hogares inteligentes</title>
+  </head>
+  <body>
+    <main class="contact__section">
+      <div class="container">
+        <h2 class="section__title">
+          Sumate para acceder a tu Hogar inteligente
+        </h2>
+        <div class="contact__formcontainer">
+          <div class="contact__formcontainer-img">
+            <img src="./Assets/smart-home-form.jpg" alt="smarthome" />
+          </div>
+          <div class="contact__formcontainer-form">
+            <form action="">
+              <div class="form__item">
+                <label for="name">Nombre y apellido</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Juan Perez"
+                  required
+                />
+              </div>
+              <div class="form__item">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                />
+              </div>
+              <div class="form__item">
+                <label for="telefono">Teléfono</label>
+                <input
+                  type="tel"
+                  name="telefono"
+                  id="telefono"
+                  placeholder="Sólo números"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </div>
+              <div class="form__item">
+                <label for="password">Elegir Contraseña</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div class="form__item">
+                <label for="password">Repetir Contraseña</label>
+                <input type="password" name="password" id="password" />
+              </div>
+              <div>
+                <input type="checkbox" name="novedades" id="novedades"/> Deseo
+                recibir información sobre novedades y ofertas
+              </div>
+              <button type="submit">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <button class="btn">
+        <a href="index.html">Volver</a>
+      </button>
+    </main>
+  </body>
+</html>
